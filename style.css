@@ -1,0 +1,29 @@
+h2 {
+    color : black;
+    text-align: center;
+    padding : 10px;
+    font-weight: 10;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+body { 
+    overflow : hidden;
+}
+
+#image{
+    width : 290px;
+    height : 180px;
+    background: url('img/bg1.jpg');
+    background-size : 100%;
+    margin-left : auto;
+    margin-right : auto;
+}
+
+#actions {
+    position: fixed;
+    top : 0;
+    left : 0;
+    padding: 10px;
+    margin : 10px;
+}

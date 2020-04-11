@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3D Animation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <h2>3D Transformation CSS visual editor</h2>
+
+    <div id="image"></div>
+
+    <div id="actions">
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal1" onClick="findValue()">Code</a>
+
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>CSS Code</h4>
+                <p id="output"></p>
+            </div>
+            <div class="modal-footer">
+                <button onclick="copy()" class="btn">Copy</button>
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+
+        <button class="btn" onclick="reset()">Reset</button>
+    </div>
+
+    <div id="input">
+
+        <form action="#" class="container">
+            <p class="range-field">
+                <label>RotateX</label>
+                <input type="range" id="rotateX" min="-360" max="360" oninput="changeValue()">
+            </p>
+            <p class="range-field">
+                <label>RotateY</label>
+                <input type="range" id="rotateY" min="-360" max="360" oninput="changeValue()">
+            </p>
+            <p class="range-field">
+                <label>RotateZ</label>
+                <input type="range" id="rotateZ" min="-360" max="360" oninput="changeValue()">
+            </p>
+            <p class="range-field">
+                <label>SkewX</label>
+                <input type="range" id="skewX" min="-360" max="360" oninput="changeValue()">
+            </p>
+            <p class="range-field">
+                <label>SkewY</label>
+                <input type="range" id="skewY" min="-360" max="360" oninput="changeValue()">
+            </p>
+        </form>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">  
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js">   
+    </script>
+    <script>
+
+        $(document).ready(function(){
+            $('.modal').modal();
+        })
+
+    </script>
+</body>
+</html>
